@@ -1,0 +1,107 @@
+nvcc -gencode=arch=compute_37,code=\"sm_37,compute_37\" -O3 -o task3.o -c task3.cu
+nvcc -gencode=arch=compute_37,code=\"sm_37,compute_37\" -lm -o task3 task3.o
+
+n = 8192, m = 8192, p = 8192
+-------------------------------------------
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (256, 256), NTB = 1, 
+Time to calculate results on GPU: 4552.837402 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (128, 256), NTB = 2, 
+Time to calculate results on GPU: 4384.114258 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (86, 256), NTB = 3, 
+Time to calculate results on GPU: 4173.796875 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (64, 256), NTB = 4, 
+Time to calculate results on GPU: 4139.099609 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (52, 256), NTB = 5, 
+Time to calculate results on GPU: 4135.717285 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (43, 256), NTB = 6, 
+Time to calculate results on GPU: 4122.187988 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (37, 256), NTB = 7, 
+Time to calculate results on GPU: 4122.988281 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (32, 256), NTB = 8, 
+Time to calculate results on GPU: 4124.506836 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (29, 256), NTB = 9, 
+Time to calculate results on GPU: 4311.284668 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (26, 256), NTB = 10, 
+Time to calculate results on GPU: 4184.442383 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (24, 256), NTB = 11, 
+Time to calculate results on GPU: 4167.570801 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (22, 256), NTB = 12, 
+Time to calculate results on GPU: 4153.046875 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (20, 256), NTB = 13, 
+Time to calculate results on GPU: 4150.203125 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (19, 256), NTB = 14, 
+Time to calculate results on GPU: 4151.939941 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (18, 256), NTB = 15, 
+Time to calculate results on GPU: 4155.875000 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (16, 256), NTB = 16, 
+Time to calculate results on GPU: 4275.041992 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (16, 256), NTB = 17, 
+Time to calculate results on GPU: 4153.583496 ms.
+

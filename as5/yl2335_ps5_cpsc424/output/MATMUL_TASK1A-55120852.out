@@ -1,0 +1,213 @@
+nvcc -gencode=arch=compute_37,code=\"sm_37,compute_37\" -O3 -o task1a.o -c task1a.cu
+nvcc -gencode=arch=compute_37,code=\"sm_37,compute_37\" -lm -o task1a task1a.o
+
+n = 1024, m = 1024, p = 1024
+-------------------------------------------
+Device count = 1
+Using device 0
+Matrix Dimensions = 1024, 1024, 1024
+Block_Dim = (2, 2), Grid_Dim = (512, 512), 
+Time to calculate results on GPU: 723.186462 ms.
+Time to calculate results on CPU: 285.614777 ms.
+Scaled error between GPU and CPU: 4.627951e-10
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 1024, 1024, 1024
+Block_Dim = (4, 4), Grid_Dim = (256, 256), 
+Time to calculate results on GPU: 164.972229 ms.
+Time to calculate results on CPU: 285.041931 ms.
+Scaled error between GPU and CPU: 4.627951e-10
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 1024, 1024, 1024
+Block_Dim = (8, 8), Grid_Dim = (128, 128), 
+Time to calculate results on GPU: 50.930687 ms.
+Time to calculate results on CPU: 283.854889 ms.
+Scaled error between GPU and CPU: 4.627951e-10
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 1024, 1024, 1024
+Block_Dim = (16, 16), Grid_Dim = (64, 64), 
+Time to calculate results on GPU: 29.812960 ms.
+Time to calculate results on CPU: 283.415436 ms.
+Scaled error between GPU and CPU: 4.627951e-10
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 1024, 1024, 1024
+Block_Dim = (32, 32), Grid_Dim = (32, 32), 
+Time to calculate results on GPU: 26.745119 ms.
+Time to calculate results on CPU: 274.197784 ms.
+Scaled error between GPU and CPU: 4.627951e-10
+
+n = 8192, m = 8192, p = 8192
+-------------------------------------------
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (2, 2), Grid_Dim = (4096, 4096), 
+Time to calculate results on GPU: 299128.968750 ms.
+Time to calculate results on CPU: 254406.984375 ms.
+Scaled error between GPU and CPU: 1.624138e-10
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (4, 4), Grid_Dim = (2048, 2048), 
+Time to calculate results on GPU: 83998.742188 ms.
+Time to calculate results on CPU: 244456.515625 ms.
+Scaled error between GPU and CPU: 1.624138e-10
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (8, 8), Grid_Dim = (1024, 1024), 
+Time to calculate results on GPU: 26896.605469 ms.
+Time to calculate results on CPU: 255600.875000 ms.
+Scaled error between GPU and CPU: 1.624138e-10
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (16, 16), Grid_Dim = (512, 512), 
+Time to calculate results on GPU: 15869.956055 ms.
+Time to calculate results on CPU: 254389.484375 ms.
+Scaled error between GPU and CPU: 1.624138e-10
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (256, 256), 
+Time to calculate results on GPU: 13552.916992 ms.
+Time to calculate results on CPU: 254341.453125 ms.
+Scaled error between GPU and CPU: 1.624138e-10
+
+n = 1024, m = 1024, p = 8192
+-------------------------------------------
+Device count = 1
+Using device 0
+Matrix Dimensions = 1024, 8192, 1024
+Block_Dim = (2, 2), Grid_Dim = (512, 512), 
+Time to calculate results on GPU: 4797.590332 ms.
+Time to calculate results on CPU: 2739.566162 ms.
+Scaled error between GPU and CPU: 1.300756e-09
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 1024, 8192, 1024
+Block_Dim = (4, 4), Grid_Dim = (256, 256), 
+Time to calculate results on GPU: 1424.671265 ms.
+Time to calculate results on CPU: 2764.611328 ms.
+Scaled error between GPU and CPU: 1.300756e-09
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 1024, 8192, 1024
+Block_Dim = (8, 8), Grid_Dim = (128, 128), 
+Time to calculate results on GPU: 417.775543 ms.
+Time to calculate results on CPU: 2787.656494 ms.
+Scaled error between GPU and CPU: 1.300756e-09
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 1024, 8192, 1024
+Block_Dim = (16, 16), Grid_Dim = (64, 64), 
+Time to calculate results on GPU: 246.666916 ms.
+Time to calculate results on CPU: 2661.287842 ms.
+Scaled error between GPU and CPU: 1.300756e-09
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 1024, 8192, 1024
+Block_Dim = (32, 32), Grid_Dim = (32, 32), 
+Time to calculate results on GPU: 214.123749 ms.
+Time to calculate results on CPU: 2751.364014 ms.
+Scaled error between GPU and CPU: 1.300756e-09
+
+n = 8192, m = 8192, p = 1024
+-------------------------------------------
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 1024, 8192
+Block_Dim = (2, 2), Grid_Dim = (4096, 4096), 
+Time to calculate results on GPU: 37237.238281 ms.
+Time to calculate results on CPU: 30782.609375 ms.
+Scaled error between GPU and CPU: 5.786210e-11
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 1024, 8192
+Block_Dim = (4, 4), Grid_Dim = (2048, 2048), 
+Time to calculate results on GPU: 10579.479492 ms.
+Time to calculate results on CPU: 32579.564453 ms.
+Scaled error between GPU and CPU: 5.786210e-11
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 1024, 8192
+Block_Dim = (8, 8), Grid_Dim = (1024, 1024), 
+Time to calculate results on GPU: 3464.234863 ms.
+Time to calculate results on CPU: 30954.626953 ms.
+Scaled error between GPU and CPU: 5.786210e-11
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 1024, 8192
+Block_Dim = (16, 16), Grid_Dim = (512, 512), 
+Time to calculate results on GPU: 2127.230225 ms.
+Time to calculate results on CPU: 31326.056641 ms.
+Scaled error between GPU and CPU: 5.786210e-11
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 1024, 8192
+Block_Dim = (32, 32), Grid_Dim = (256, 256), 
+Time to calculate results on GPU: 1728.242188 ms.
+Time to calculate results on CPU: 31447.750000 ms.
+Scaled error between GPU and CPU: 5.786210e-11
+
+n = 8192, m = 1024, p = 8192
+-------------------------------------------
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 1024
+Block_Dim = (2, 2), Grid_Dim = (512, 4096), 
+Time to calculate results on GPU: 37655.304688 ms.
+Time to calculate results on CPU: 31964.505859 ms.
+Scaled error between GPU and CPU: 4.591183e-10
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 1024
+Block_Dim = (4, 4), Grid_Dim = (256, 2048), 
+Time to calculate results on GPU: 10499.374023 ms.
+Time to calculate results on CPU: 31111.402344 ms.
+Scaled error between GPU and CPU: 4.591183e-10
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 1024
+Block_Dim = (8, 8), Grid_Dim = (128, 1024), 
+Time to calculate results on GPU: 3489.703613 ms.
+Time to calculate results on CPU: 30602.722656 ms.
+Scaled error between GPU and CPU: 4.591183e-10
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 1024
+Block_Dim = (16, 16), Grid_Dim = (64, 512), 
+Time to calculate results on GPU: 1977.290039 ms.
+Time to calculate results on CPU: 32693.828125 ms.
+Scaled error between GPU and CPU: 4.591183e-10
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 1024
+Block_Dim = (32, 32), Grid_Dim = (32, 256), 
+Time to calculate results on GPU: 1797.689087 ms.
+Time to calculate results on CPU: 31484.093750 ms.
+Scaled error between GPU and CPU: 4.591183e-10
+

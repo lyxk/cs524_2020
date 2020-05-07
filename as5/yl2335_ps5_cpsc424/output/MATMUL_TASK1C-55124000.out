@@ -1,0 +1,10 @@
+make: `task1c' is up to date.
+
+n = 23080, m = 23080, p = 23080
+-------------------------------------------
+Device count = 1
+Using device 0
+Matrix Dimensions = 23080, 23080, 23080
+Block_Dim = (32, 32), Grid_Dim = (722, 722), 
+Time to calculate results on GPU: 336938.875000 ms.
+

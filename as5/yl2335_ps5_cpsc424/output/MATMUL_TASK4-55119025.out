@@ -1,0 +1,13 @@
+nvcc -gencode=arch=compute_37,code=\"sm_37,compute_37\" -O3 -o task4.o -c task4.cu
+nvcc -gencode=arch=compute_37,code=\"sm_37,compute_37\" -lm -o task4 task4.o
+
+n = 1100, m = 1100, p = 1100, TW = 16, NTB = 3
+-------------------------------------------
+Device count = 1
+Using device 0
+Matrix Dimensions = 1100, 1100, 1100
+Block_Dim = (16, 16), Grid_Dim = (23, 69), 
+Time to calculate results on GPU: 22.541632 ms.
+Time to calculate results on CPU: 330.359406 ms.
+Scaled error between GPU and CPU: 4.594856e-10
+

@@ -1,0 +1,34 @@
+nvcc -gencode=arch=compute_37,code=\"sm_37,compute_37\" -O3 -o task2b.o -c task2b.cu
+nvcc -gencode=arch=compute_37,code=\"sm_37,compute_37\" -lm -o task2b task2b.o
+
+n = 8192, m = 8192, p = 8192
+-------------------------------------------
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (2, 2), Grid_Dim = (4096, 4096), 
+Time to calculate results on GPU: 356022.406250 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (4, 4), Grid_Dim = (2048, 2048), 
+Time to calculate results on GPU: 50260.835938 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (8, 8), Grid_Dim = (1024, 1024), 
+Time to calculate results on GPU: 9918.337891 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (16, 16), Grid_Dim = (512, 512), 
+Time to calculate results on GPU: 5968.383789 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (256, 256), 
+Time to calculate results on GPU: 5117.062012 ms.

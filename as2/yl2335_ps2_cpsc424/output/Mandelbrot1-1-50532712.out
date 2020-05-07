@@ -1,0 +1,29 @@
+Task 1
+
+
+Serial version
+
+icc -g -O3 -xHost -fno-alias -std=c99 -c -o mandseq.o mandseq.c
+icc -g -O3 -xHost -fno-alias -std=c99 -qopenmp -c drand.c
+icc -g -O3 -xHost -fno-alias -std=c99 -o mandseq mandseq.o drand.o /home/cpsc424_ahs3/utils/timing/timing.o -lm
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506772
+Computing time: 76.019149 seconds
+
+real	1m16.022s
+user	1m15.863s
+sys	0m0.005s
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506772
+Computing time: 75.855302 seconds
+
+real	1m15.859s
+user	1m15.858s
+sys	0m0.003s
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506772
+Computing time: 75.855497 seconds
+
+real	1m15.859s
+user	1m15.859s
+sys	0m0.003s

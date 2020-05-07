@@ -1,0 +1,38 @@
+/home/cpsc424_yl2335/project/yl2335_ps4_cpsc424
+c04n03
+1
+mpicc -g -O3 -xHost -fno-alias -std=c99 -I/home/cpsc424_ahs3/utils/timing -c serial.c
+mpicc -o serial -g -O3 -xHost -fno-alias -std=c99 -I/home/cpsc424_ahs3/utils/timing serial.o matmul.o /home/cpsc424_ahs3/utils/timing/timing.o
+Matrix multiplication times:
+   N      TIME (secs)    F-norm of Error
+ -----   -------------  -----------------
+   1000       0.1543     0.0000000000
+   2000       1.1898     0.0000000000
+   4000      14.3322     0.0000000000
+   8000     121.2531     0.0000000000
+
+real	2m18.534s
+user	2m17.659s
+sys	0m0.679s
+Matrix multiplication times:
+   N      TIME (secs)    F-norm of Error
+ -----   -------------  -----------------
+   1000       0.1540     0.0000000000
+   2000       1.1802     0.0000000000
+   4000      14.2961     0.0000000000
+   8000     120.7540     0.0000000000
+
+real	2m17.835s
+user	2m17.210s
+sys	0m0.576s
+Matrix multiplication times:
+   N      TIME (secs)    F-norm of Error
+ -----   -------------  -----------------
+   1000       0.1532     0.0000000000
+   2000       1.1810     0.0000000000
+   4000      14.2572     0.0000000000
+   8000     120.8260     0.0000000000
+
+real	2m17.824s
+user	2m17.238s
+sys	0m0.577s

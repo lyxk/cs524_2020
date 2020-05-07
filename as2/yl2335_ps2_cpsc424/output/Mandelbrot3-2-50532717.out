@@ -1,0 +1,208 @@
+Task 3 - Part 2
+icc -g -O3 -xHost -fno-alias -std=c99 -qopenmp -c mandomp-single-row-tasks.c
+icc -g -O3 -xHost -fno-alias -std=c99 -qopenmp -o mandomp-single-row-tasks mandomp-single-row-tasks.o drand-ts.o /home/cpsc424_ahs3/utils/timing/timing.o -lm
+
+
+Performance runs for thread-safe OpenMP with single thread creating row tasks
+
+Number of threads =  1
+OMP_SCHEDULE = 
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506772
+Computing time: 78.198557 seconds
+real	1m18.203s
+user	1m18.196s
+sys	0m0.005s
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506772
+Computing time: 78.188227 seconds
+real	1m18.193s
+user	1m18.186s
+sys	0m0.005s
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506772
+Computing time: 78.168422 seconds
+real	1m18.173s
+user	1m18.166s
+sys	0m0.005s
+
+Number of threads =  2
+OMP_SCHEDULE = 
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506678
+Computing time: 39.323496 seconds
+real	0m39.328s
+user	1m18.618s
+sys	0m0.028s
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506692
+Computing time: 39.330479 seconds
+real	0m39.335s
+user	1m18.639s
+sys	0m0.022s
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506674
+Computing time: 39.335302 seconds
+real	0m39.340s
+user	1m18.641s
+sys	0m0.028s
+
+Number of threads =  4
+OMP_SCHEDULE = 
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506684
+Computing time: 19.701843 seconds
+real	0m19.707s
+user	1m18.780s
+sys	0m0.023s
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506710
+Computing time: 19.698669 seconds
+real	0m19.704s
+user	1m18.771s
+sys	0m0.020s
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506738
+Computing time: 19.701928 seconds
+real	0m19.707s
+user	1m18.796s
+sys	0m0.007s
+
+Number of threads =  10
+OMP_SCHEDULE = 
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506594
+Computing time: 7.955771 seconds
+real	0m7.961s
+user	1m19.523s
+sys	0m0.014s
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506606
+Computing time: 7.968067 seconds
+real	0m7.973s
+user	1m19.652s
+sys	0m0.007s
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506544
+Computing time: 7.945100 seconds
+real	0m7.949s
+user	1m19.421s
+sys	0m0.013s
+
+Number of threads =  20
+OMP_SCHEDULE = 
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506672
+Computing time: 4.298793 seconds
+real	0m4.305s
+user	1m25.648s
+sys	0m0.087s
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506722
+Computing time: 4.365197 seconds
+real	0m4.370s
+user	1m26.567s
+sys	0m0.215s
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Seed = 12344. RAND_MAX = 2147483647.
+Estimated area of the Manderbrolt Set: 1.506746
+Computing time: 4.410688 seconds
+real	0m4.416s
+user	1m27.700s
+sys	0m0.169s
+

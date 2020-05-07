@@ -1,0 +1,63 @@
+
+Currently Loaded Modules:
+  1) StdEnv                                           (S)
+  2) GCCcore/7.3.0
+  3) binutils/2.30-GCCcore-7.3.0
+  4) icc/2018.3.222-GCC-7.3.0-2.30
+  5) ifort/2018.3.222-GCC-7.3.0-2.30
+  6) iccifort/2018.3.222-GCC-7.3.0-2.30
+  7) zlib/1.2.11-GCCcore-7.3.0
+  8) numactl/2.0.11-GCCcore-7.3.0
+  9) XZ/5.2.4-GCCcore-7.3.0
+ 10) libxml2/2.9.8-GCCcore-7.3.0
+ 11) libpciaccess/0.14-GCCcore-7.3.0
+ 12) hwloc/1.11.10-GCCcore-7.3.0
+ 13) OpenMPI/3.1.1-iccifort-2018.3.222-GCC-7.3.0-2.30
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+
+/home/cpsc424_yl2335/project/yl2335_ps4_cpsc424
+c03n09
+4
+make: `task3' is up to date.
+
+p = 4
+
+Matrix multiplication times:
+   N          COMM (secs)            COMP (secs)             TIME (secs)        F-norm of Error
+-------  ---------------------  ----------------------  ---------------------  ------------------
+  8000           50.4272                 8.9728                 59.4000             0.0000000000
+  8000           18.5945                26.7191                 45.3135             0.0000000000
+  8000           19.7342                39.6140                 59.3482             0.0000000000
+  8000           14.4849                44.9153                 59.4001             0.0000000000
+
+real	0m59.991s
+user	3m43.177s
+sys	0m1.776s
+
+Matrix multiplication times:
+   N          COMM (secs)            COMP (secs)             TIME (secs)        F-norm of Error
+-------  ---------------------  ----------------------  ---------------------  ------------------
+  8000           50.4021                 8.9910                 59.3931             0.0000000000
+  8000           18.6022                26.7145                 45.3167             0.0000000000
+  8000           19.7862                39.5547                 59.3409             0.0000000000
+  8000           14.4512                44.9421                 59.3933             0.0000000000
+
+real	0m59.965s
+user	3m43.219s
+sys	0m1.719s
+
+Matrix multiplication times:
+   N          COMM (secs)            COMP (secs)             TIME (secs)        F-norm of Error
+-------  ---------------------  ----------------------  ---------------------  ------------------
+  8000           50.4329                 9.0480                 59.4809             0.0000000000
+  8000           18.6623                26.6691                 45.3314             0.0000000000
+  8000           19.8077                39.6209                 59.4287             0.0000000000
+  8000           14.4909                44.9900                 59.4809             0.0000000000
+
+real	1m0.053s
+user	3m43.458s
+sys	0m1.763s

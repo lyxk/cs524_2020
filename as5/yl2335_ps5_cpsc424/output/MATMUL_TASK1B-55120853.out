@@ -1,0 +1,33 @@
+make: `task1b' is up to date.
+
+n = 8192, m = 8192, p = 8192
+-------------------------------------------
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (2, 2), Grid_Dim = (4096, 4096), 
+Time to calculate results on GPU: 307402.062500 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (4, 4), Grid_Dim = (2048, 2048), 
+Time to calculate results on GPU: 89639.273438 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (8, 8), Grid_Dim = (1024, 1024), 
+Time to calculate results on GPU: 32324.544922 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (16, 16), Grid_Dim = (512, 512), 
+Time to calculate results on GPU: 20111.351562 ms.
+
+Device count = 1
+Using device 0
+Matrix Dimensions = 8192, 8192, 8192
+Block_Dim = (32, 32), Grid_Dim = (256, 256), 
+Time to calculate results on GPU: 20753.285156 ms.
